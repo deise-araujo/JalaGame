@@ -1,0 +1,78 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgba(30, 30, 30, 1);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.esquerdo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    width: 15%;
+    background-color: #2D2D2D;
+    
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+    position: absolute;
+    width: 350px;
+    height: 106px;
+    left: 13px;
+    top: 18px;
+
+}
+
+.box1{
+    margin-top: 150px;
+    width: 158px;
+    top: 184px;
+    
+}
+.box1 > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+}
+.box1 > div > p {
+    padding-left: 5px;
+}
+
+.box2{
+    margin-top: 100px;
+    width: 277px;
+    top: 592px;
+
+}
+.box2 > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5%;
+    flex-direction: column;
+}
+.box2 > div > p {
+    padding-left: 5px;
+}
