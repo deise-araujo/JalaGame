@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Jogo</title>
+</head>
+<body>
+    <section class="esquerdo">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+            <h1>JALA GAMES</h1>
+        </div>
+        <div class="box1">
+            <div class="profile">
+                <img src="img/perfil.png" alt="">
+                <p><a href="">Profile</a></p>
+            </div>
+            <div class="Search">
+                <img src="img/akar-icons_search (1).png" alt="">
+                <p><a href="">Search</a></p>
+            </div>
+            <div class="Favorite">
+                <img src="img/bookmark.png" alt="">
+                <p><a href="">Favorite</a></p>
+            </div>
+            <div class="Carrinho">
+                <p></p>
+                <img src="img/Group.png" alt="">
+                <p><a href="">Carrinho</a></p>
+            </div>
+        </div>
+        
+        <div class="box2">
+            <div class="categoria">
+                <h2>Category</h2>
+                <br>
+                <p><a href="#">Preço</a></p>
+                <br>
+                <p><a href="#">Genero</a></p>
+                <br>
+                <p><a href="#">Recurso</a></p>
+                <br>
+                <p><a href="#">Tipo</a></p>
+                <br>
+                <p><a href="#">Plataforma</a></p>
+                <br>
+                <p><a href="#">All Games</a></p>
+            </div>
+        </div>
+    </section>
+    <div class="Direta">
+        <header>
+            <div id="divBusca">
+                <input type="text" onclick="" id="txtBusca" placeholder="Search here"/>
+                <a href=""><img src="img/pesquisa.png" id="btnBusca" alt="Buscar"/></a>
+            </div>
+        </header>
+        <main>
+            <div class="boxcategoria">
+                <div class="c1" id="gender">
+                    <button>Ação</button>
+                </div>
+                <div class="c2" id="gender">
+                    <button>Aventura</button>
+                </div>
+                <div class="c3" id="gender">
+                    <button>Luta</button>
+                </div>
+                <div class="c4" id="gender">
+                    <button>Estratégia</button>
+                </div>
+                <div class="c5" id="gender">
+                    <button>Fantasia</button>
+                </div>
+                <div class="c6" id="gender">
+                    <button>Sobrevivência</button>
+                </div>
+            </div>
+            <div class="boxforyou">
+                <h3>For You</h3>
+                <button>Top</button>
+                <button>Popullar</button>
+                <button>Recommended</button>
+                <button><img src="img/filter.png" alt="">Filter</button>
+            </div>
+            <div class="Game">
+                <div class="game 1">
+                    <img src="img/Games/tlou.png" alt="">
+                    <p class="titulo-jogo"><a href="#">The Last Of Us - Part 2</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+                <div class="game 2">
+                    <img src="img/Games/wtr.png" alt="">
+                    <p class="titulo-jogo"><a href="#">The Witcher 3</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+                <div class="game 3">
+                    <img src="img/Games/gtasan.png" alt="">
+                    <p class="titulo-jogo"><a href="#">GTA SA</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+                <div class="game 4">
+                    <img src="img/Games/gollum.png" alt="">
+                    <p class="titulo-jogo"><a href="#">The Lord of the Rings</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#"> 5.5 genero</a></p>
+                </div>
+                <div class="game 5">
+                    <img src="img/Games/mine.png" alt="">
+                    <p class="titulo-jogo"><a href="#">Minecraft</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+                <div class="game 6">
+                    <img src="img/Games/god.png" alt="">
+                    <p class="titulo-jogo"><a href="#">God of War 4</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+                <div class="game 7">
+                    <img src="img/Games/sman.png" alt="">
+                    <p class="titulo-jogo"><a href="#">Spider-Man</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+                <div class="game 8">
+                    <img src="img/Games/assvalha.png" alt="">
+                    <p class="titulo-jogo"><a href="#">Assassins Creed Valhalla</a></p>
+                    <p>00.00</p>
+                    <p><img src="img/star.png" alt=""><a href="#">5.5 genero</a></p>
+                </div>
+            </div>
+       </main>
+    </div>
+    <script>
+        const filtroInput = document.querySelector('.Caixadetexto input');
+        const games = document.querySelectorAll('.Game .game');
+      
+        filtroInput.addEventListener('input', function () {
+          const filtro = filtroInput.value.toLowerCase();
+      
+          games.forEach((game) => {
+            const titulo = game.querySelector('p:first-of-type').textContent.toLowerCase();
+            const preco = game.querySelector('p:nth-of-type(2)').textContent;
+      
+            if (titulo.includes(filtro)) {
+              game.style.display = 'block';
+            } else {
+              game.style.display = 'none';
+            }
+          });
+        });
+      </script>
+</body>
+</html>
