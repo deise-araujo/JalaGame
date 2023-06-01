@@ -1,0 +1,197 @@
+* {
+    border: 0%;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+body {
+    background: rgba(30, 30, 30, 1);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.Game{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Game > div{
+    margin-top: 30px;
+}
+
+.Game > div > img{
+    margin: 0px 10px;
+}
+
+.Game > div > img:hover{
+    cursor: pointer;
+}
+
+.Game > div > p{
+    margin: 1px 0px;
+    padding-left: 20px;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+.Direta > header{
+    display: flex;
+    justify-content: center;
+}
+#divBusca {
+    border: 3px solid #2D2D2D;
+    height: 50px;
+    width: 50%;
+    margin: 30px;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+#txtBusca{
+    background-color: transparent;
+    border: none;
+    width: 95%;
+}
+
+
+#btnBusca{
+    width: 35px;
+    height: 35px;
+}
+
+.boxcategoria{
+    display: flex;
+    margin: 10px;
+}
+
+.boxcategoria > div > button {
+    display: flex;
+    width: 212px;
+    height: 101px;
+    background: transparent;
+    border: none;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxcategoria > div > button:hover{
+    cursor: pointer;
+    background-color: #2d2d2d86;
+}
+
+#gender {
+    margin-left: 10px;
+    width: 212px;
+    height: 101px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c1{
+    background-image: url(img/acao.png);
+}
+.c2{
+    background-image: url(img/Aventura.png);
+}
+.c3{
+    background-image: url(img/Luta.png);
+}
+.c4{
+    background-image: url(img/EstratВgia.png);
+}
+.c5{
+    background-image: url(img/Fantasia.png);
+}
+.c6{
+    background-image: url(img/SobrevivИncia.png);
+}
+
+.boxforyou{
+    margin: 30px 10px 10px 10px;
+}
+
+.boxforyou > button{
+    background: transparent;
+    border: rgb(255, 255, 255);
+    outline: none;
+    border-radius: #ffffff;
+
+    padding: 0px 10px;
+}
+
+.boxforyou > button:hover{
+    cursor: pointer;
+    color: #ffffff4f;
+}
+
+.box1{
+    margin-top: 110px;
+    width: 158px;
+    top: 184px;
+}
+
+.box1 > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5%;
+}
+
+.box1 > div > p {
+    padding-left: 10px;
+}
+
+.box2{
+    margin-top: 70px;
+    width: auto;
+    top: 592px;
+    color: #bfbebe;
+}
+
+.box2 > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5%;
+    flex-direction: column;
+}
+
+.box2 > div > p {
+    padding-left: 5px;
+}
+
+.esquerdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 15%;
+
+    background-color: #2D2D2D;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+
+.logo{
+    display: flex;
+}
+
+.categoria > p > a{
+    padding-left: 15px;
+}
+
