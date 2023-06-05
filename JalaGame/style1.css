@@ -1,5 +1,5 @@
 * {
-    border: 0%;
+    /* border: 0%; */
     padding: 0%;
     margin: 0%;
     text-decoration: none;
@@ -31,6 +31,7 @@ body {
     cursor: pointer;
 }
 
+
 .Game > div > p{
     margin: 1px 0px;
     padding-left: 20px;
@@ -57,6 +58,11 @@ body{
     background-color: transparent;
     border: none;
     width: 95%;
+    height: 40px;
+    font-size: 20px;
+}
+#txtBusca:focus{
+    outline: none;
 }
 
 
@@ -105,13 +111,13 @@ body{
     background-image: url(img/Luta.png);
 }
 .c4{
-    background-image: url(img/EstratВgia.png);
+    background-image: url(img/Estrategia.png);
 }
 .c5{
     background-image: url(img/Fantasia.png);
 }
 .c6{
-    background-image: url(img/SobrevivИncia.png);
+    background-image: url(img/Sobrevivencia.png);
 }
 
 .boxforyou{
@@ -123,7 +129,7 @@ body{
     border: rgb(255, 255, 255);
     outline: none;
     border-radius: #ffffff;
-
+    font-weight: bold;
     padding: 0px 10px;
 }
 
@@ -132,10 +138,45 @@ body{
     color: #ffffff4f;
 }
 
+.categoria > div > a{
+    color: rgb(136, 136, 136);
+    padding: 5px;
+    font-weight: 100;
+}
+
+.hidden{
+    display: none;
+}
+
+.botão_categoria{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+}
+
+.text_price{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
+}
+
+.text_price:focus{
+    outline: none;
+}
+
+#textoExibido{
+    font-weight: 100;
+    padding: 10px;
+}
+
+.botão_categoria:hover{
+    cursor: pointer;
+}
+
 .box1{
-    margin-top: 110px;
-    width: 158px;
-    top: 184px;
+    margin-top: -20px;
+    width: 190px;
 }
 
 .box1 > div{
@@ -151,10 +192,8 @@ body{
 }
 
 .box2{
-    margin-top: 70px;
-    width: auto;
-    top: 592px;
-    color: #bfbebe;
+    margin-top: 35px;
+    width: 190px;
 }
 
 .box2 > div{
@@ -166,7 +205,8 @@ body{
 }
 
 .box2 > div > p {
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    text-align: left;
 }
 
 .esquerdo {
@@ -174,10 +214,8 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 15%;
-
+    width: 16%;
     background-color: #2D2D2D;
-
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 600;
@@ -191,7 +229,7 @@ body{
     display: flex;
 }
 
-.categoria > p > a{
-    padding-left: 15px;
+.categoria{
+    text-align: left;
 }
 
